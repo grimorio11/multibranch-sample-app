@@ -9,6 +9,8 @@ pipeline {
         echo "hello"
       }
     }
+  }
+}
 //    stage('Build') {
 //      steps {
 //        sh './gradlew clean check --no-daemon'
@@ -24,4 +26,4 @@ pipeline {
 //        )
 //    }
 //  }
-}
+//}

@@ -9,6 +9,16 @@ pipeline {
         echo "hello"
       }
     }
+    stage('Cat readme'){
+      when {
+        branch "fix-*"
+      }
+      steps{
+        sh '''
+          cat README.md
+        '''
+      }
+    }
   }
 }
 //    stage('Build') {
